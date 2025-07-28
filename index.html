@@ -228,6 +228,36 @@
   .link-title {
     display: none;
   }
+
+   .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+}
+
+/* Default styles for mobile nav (hidden by default) */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  background-color: #F5F1E8;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.mobile-nav a {
+  display: inline-block;
+  margin: 0 15px;
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
 }
   </style>
 </head>
@@ -236,8 +266,8 @@
   <!-- Top Strip -->
   <div class="top-strip"></div>
 
-  <!-- Navigation Bar -->
-  <nav class="menu">
+  <!-- Desktop Navigation Bar -->
+  <nav class="menu desktop-nav">
     <a class="link" href="#">
       <span class="link-icon">🎤</span>
       <span class="link-title">About</span>
@@ -251,6 +281,13 @@
       <span class="link-title">Contact</span>
     </a>
   </nav>
+
+  <!-- Mobile Nav -->
+<nav class="mobile-nav">
+  <a href="#">About</a>
+  <a href="#">Projects</a>
+  <a href="#">Contact</a>
+</nav>
 
   <!-- Main Content -->
   <div class="container">
