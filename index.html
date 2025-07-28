@@ -219,53 +219,45 @@
       font-size: 0.9rem;
     }
 
-    @media (max-width: 600px) {
-      header {
+@media (max-width: 600px) {
+  header {
         flex-direction: column;
         align-items: flex-start;
       }
 
- .site-subtitle {
+  .site-subtitle {
     font-size: 0.95rem;
   }
 
   /* Hide the entire fancy menu */
-  .menu {
-    display: none;
-  }
-
-  /* Hide the desktop nav container */
+  .menu,
   .desktop-nav {
     display: none;
   }
 
-  /* Show the simple mobile nav */
-  .mobile-nav {
-    display: block;
-  }
-}
-
-/* Default styles for mobile nav (hidden by default) */
+/* Show mobile nav as centered white text links */
 .mobile-nav {
-  display: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background: none;
+  padding: 15px 0;
   position: fixed;
-  top: 40px;
+  top: 0;
   left: 0;
   width: 100%;
-  background-color: #F5F1E8;
-  text-align: center;
-  padding: 10px 0;
   z-index: 1000;
 }
 
 .mobile-nav a {
-  display: inline-block;
-  margin: 0 15px;
-  color: #000;
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
   text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
+  font-family: "Jost", sans-serif;
 }
+}
+
   </style>
 </head>
 <body>
